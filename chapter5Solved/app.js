@@ -150,7 +150,6 @@ num = ((num + 5) * 10) / 2;
 document.write("RESULT IS: "+ num +"<br>");
 
 
-
 /* 11. The Age Calculator: Forgot how old someone is? */ 
 /* a. Store the current year in a variable.
 b. Store their birth year in a variable.
