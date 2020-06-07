@@ -74,6 +74,7 @@ after variable declaration is: ??”. */
     document.write("4 x 10 = " + 4 * 10+"<br><br>");
 
     /* 6. The Temperature Converter: It’s hot out! Let’s make a converter based on the steps here */ 
+    
 
     var celciusTemp = 21;
     var farenheit = Math.round((celciusTemp * (9/5)) + 32);
@@ -81,3 +82,25 @@ after variable declaration is: ??”. */
 
     document.write(celciusTemp + " °C is " + farenheit + " °F<br>");
     document.write(farenheit + " °F is " + celciusTemp + " °C");
+
+
+    /* 7. Write a program to implement checkout process of a
+shopping cart system for an e-commerce website. Store
+the following in variables */ 
+
+    document.write("<h1>Shopping Cart</h1><br>");
+
+    var item1Price = 650;
+    var item2Price = 3;
+    var item1Quantity = 100;
+    var item2Quantity = 7;
+    var shippingCharges = 100;
+
+    document.write("Price Of item 1 is: "+ item1Price +"<br>");
+    document.write("Price of item 2 is: "+ item2Price +"<br>");
+    document.write("Ordered quantity of item 1 is: "+ item1Quantity +"<br>");
+    document.write("Ordered Quantity of item 2 is: "+ item2Quantity +"<br>");
+    document.write("Shipping charges: "+ shippingCharges +"<br>");
+
+    var totalCost = ;
+    document.write("Shipping charges: "+ shippingCharges +"<br>");
