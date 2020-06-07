@@ -16,8 +16,8 @@ var myName = "ZAID BIN AHMED MAKHARISH";
 birth year. Show the following message in your browser: */
     
 var birthYear = 1997;
-    document.write("My Birth Year Is 1990");
-    document.write("Data Type Of My Declared Variable IS " + typeof birthYear +"<br/>");
+document.write("My Birth Year Is 1990<br/>");
+document.write("Data Type Of My Declared Variable IS " + typeof birthYear +"<br/>");
 
 /* 4. A visitor visits an online clothing store
 www.xyzClothing.com . Write a script to store in variables
