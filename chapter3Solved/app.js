@@ -3,7 +3,7 @@
 /* 1. Declare a variable called age & assign to it your age. Show
 your age in an alert box. */
 var age = 25;
-alert(age);
+alert("My Age Is "+age);
 
 /* 2. Declare & initialize a variable to keep track of how many
 times a visitor has visited a web page. Show his/her
