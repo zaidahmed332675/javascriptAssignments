@@ -156,8 +156,51 @@ b. Store their birth year in a variable.
 c. Calculate their 2 possible ages based on the stored
 values */ 
 
-var currentYear = 10;
-var birthYear = 10;
-num = ((num + 5) * 10) / 2;
+var currentYear = 2020;
+var birthYear = 1997;
+calculatedAge = currentYear - birthYear;
 
-document.write("RESULT IS: "+ num +"<br>");
+document.write("They Are Either: "+ calculatedAge +" Or "+ (calculatedAge + 1) +"<br>");
+
+
+/* 12. The Geometrizer: Calculate properties of a circle */ 
+/* a. Store a radius into a variable.
+b. Calculate the circumference based on the radius, and
+output “The circumference is NN”.
+(Hint : Circumference of a circle = 2 π r , π = 3.142)
+Calculate the area based on the radius, and output “The
+area is NN”. (Hint : Area of a circle = π r2, π = 3.142) */ 
+
+document.write("<h1>The Geometrizer</h1><br>");
+
+    var r = 20;
+    var pie = 3.142;
+    var circumference = 2 * pie * r;
+    var area = pie * (r^2);
+
+    document.write("Radius Of A Circle: "+ r +"<br>");
+    document.write("The Circumference Is: "+ circumference +"<br>");
+    document.write("The Area Is: "+ area +"%<br>");
+
+
+    /* 13. The Lifetime Supply Calculator: Ever wonder how
+much a “lifetime supply” of your favorite snack is?
+Wonder no more. */
+/* a. Store your favorite snack into a variable
+b. Store your current age into a variable.
+c. Store a maximum age into a variable.
+d. Store an estimated amount per day (as a number).
+e. Calculate how many would you eat total for the rest of
+your life. */ 
+
+document.write("<h1>The Lifetime Supply Calculator</h1><br>");
+
+var snack = "Candy Biscuit";
+var currentAge = 24;
+var expectedAge = 85;
+var snackPerDay = 3;
+var remainingYear = expectedAge - currentAge;
+var daysLeft = remainingYear * 365;
+var noOfSnacks = daysLeft * snackPerDay;    
+
+document.write("You Will Need : "+ noOfSnacks + " " +snack+" To Last You Untill The Ripe Old Age Of 85<br>");
