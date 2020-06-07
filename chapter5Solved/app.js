@@ -102,5 +102,63 @@ the following in variables */
     document.write("Ordered Quantity of item 2 is: "+ item2Quantity +"<br>");
     document.write("Shipping charges: "+ shippingCharges +"<br>");
 
-    var totalCost = ;
-    document.write("Shipping charges: "+ shippingCharges +"<br>");
+    var totalCost = (item1Quantity * item1Quantity) + (item2Price * item2Quantity) + shippingCharges;
+    document.write("Total Cost Of Your Order Is: "+ totalCost +"<br>");
+
+    
+    /* 8. Store total marks & marks obtained by a student in 2
+variables. Compute the percentage & show the result in
+your browser */ 
+
+    document.write("<h1>Mark Sheet</h1><br>");
+
+    var totalMarks = 980;
+    var marksObtained = 804;
+    var percentage = (totalMarks / marksObtained) * 100;
+
+    document.write("Total Marks: "+ totalMarks +"<br>");
+    document.write("Marks Obtained: "+ marksObtained +"<br>");
+    document.write("percentage: "+ percentage +"%<br>");
+
+
+    /* 9. Assume we have 10 US dollars & 25 Saudi Riyals. Write a
+script to convert the total currency to Pakistani Rupees.
+Perform all calculations in a single expression.
+(Exchange rates : 1 US Dollar = 104.80 Pakistani Rupee
+and 1 Saudi Riyal = 28 Pakistani Rupee) */ 
+
+document.write("<h1>Currency In PKR</h1><br>");
+
+var usDollars = 10;
+var saudiRiyals = 25;
+
+var pkr = (usDollars * 104.80 ) + ( saudiRiyals * 28);
+
+document.write("Total Currency In PKR: "+ pkr +"<br>");
+
+
+/* 10. Write a program to initialize a variable with some
+number and do arithmetic in following sequence: */ 
+/* a. Add 5
+b. Multiply by 10
+c. Divide the result by 2
+Perform all calculations in a single expression */ 
+
+var num = 10;
+num = ((num + 5) * 10) / 2;
+
+document.write("RESULT IS: "+ num +"<br>");
+
+
+
+/* 11. The Age Calculator: Forgot how old someone is? */ 
+/* a. Store the current year in a variable.
+b. Store their birth year in a variable.
+c. Calculate their 2 possible ages based on the stored
+values */ 
+
+var currentYear = 10;
+var birthYear = 10;
+num = ((num + 5) * 10) / 2;
+
+document.write("RESULT IS: "+ num +"<br>");
