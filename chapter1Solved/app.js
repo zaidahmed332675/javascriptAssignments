@@ -1,0 +1,10 @@
+alert("WELCOME TO MAKHISOL");
+alert("Error! please Enter a Valid Password");
+alert("Welcome To Js Land...\r\nHappy Coding!");
+alert("Welcome To Js Land");
+alert("Happy Coding!");
+alert("Using Alert In New Project!");
+alert("Alert From Head");
+alert("Alert BEFORE YOUR HTML PAGE");
+alert("Alert INSIDE YOUR HTML PAGE");
+alert("Alert AFTER YOUR HTML PAGE");
