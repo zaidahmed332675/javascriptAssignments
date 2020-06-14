@@ -164,7 +164,6 @@ b. If the guessed number +1 is the secret number, show
 document.write(`/*---------------------------------------------*/<br><br>`);
 
 var guessRandom = Math.floor(Math.random() * 11);
-
 var guessNumber = +prompt("Guess The Secret Number");
 
 if(guessNumber === guessRandom ){
@@ -214,7 +213,7 @@ d. T > 10 then “OMG! Today’s weather is so Cool.” */
 var temperature = +prompt("ENTER TEMPERATURE");
 
 if(temperature > 40 )
-    alert(`IT IS TO HOT OUTSIDE`);
+    alert(`IT IS TOO HOT OUTSIDE`);
 else if(temperature > 30 )
     alert(`THE WEATHER TODAY IS NORMAL`);
 else if(temperature > 20 )
@@ -252,29 +251,3 @@ else if(operator === "%" )
 else{
     alert("INVALID OPERATION");
 }
-
-
-
-
-
-
-document.write(`
-
-<table border="1">
-    <tr>
-        <th> Total Marks </th>
-        <th> Obtained Marks </th>
-        <th> percentage </th>
-        <th> Grade </th>
-        <th> Remarks </th>
-    </tr>   
-    <tr>
-        <td> ${totalMarks * 3} </td>
-        <td> ${obtainedmarks[0] + obtainedmarks[1] + obtainedmarks[2]} </td>
-        <td> ${Math.round(((obtainedmarks[0] + obtainedmarks[1] + obtainedmarks[2]) / (totalMarks * 3)) * 100)} % </td>
-        <td> ${grade}</td>
-        <td> ${remarks}</td>
-    </tr>
-</table>
-
-`);
