@@ -151,3 +151,130 @@ document.write(`
 </table>
 
 `);
+
+
+/* 7. Guess game:
+Store a secret number (ranging from 1 to 10) in a variable.
+Prompt user to guess the secret number.
+a. If user guesses the same number, show “Bingo! Correct
+answer”.
+b. If the guessed number +1 is the secret number, show
+“Close enough to the correct answer” */
+
+document.write(`/*---------------------------------------------*/<br><br>`);
+
+var guessRandom = Math.floor(Math.random() * 11);
+
+var guessNumber = +prompt("Guess The Secret Number");
+
+if(guessNumber === guessRandom ){
+    alert("Bingo! Correct answer");
+}else if(guessRandom === guessNumber + 1){
+    alert("Close enough to the correct answer");
+}
+else{
+    alert("You Lose");
+}
+
+
+/* 8. Write a program to check whether the given number is
+divisible by 3. Show the message to the user if the number
+is divisible by 3. */
+
+
+var divNum = +prompt("Enter A Number TO Check If It Is Divisible By 3");
+
+if (divNum % 3 == 0){
+    alert(`${divNum} Number Is Divisible By 3`);
+}
+
+
+
+/* 9. Write a program that checks whether the given input is an
+even number or an odd number. */
+
+
+var even_odd = +prompt("ENTER A NUMBER TO CHECK EVEN OR ODD");
+
+if(even_odd % 2 == 0)
+    alert(`${even_odd} IS EVEN NUMBER`);
+else{
+    alert(`${even_odd} IS ODD NUMBER`);
+}
+
+
+/* 10. Write a program that takes temperature as input and
+shows a message based on following criteria
+a. T > 40 then “It is too hot outside.”
+b. T > 30 then “The Weather today is Normal.”
+c. T > 20 then “Today’s Weather is cool.”
+d. T > 10 then “OMG! Today’s weather is so Cool.” */
+
+
+var temperature = +prompt("ENTER TEMPERATURE");
+
+if(temperature > 40 )
+    alert(`IT IS TO HOT OUTSIDE`);
+else if(temperature > 30 )
+    alert(`THE WEATHER TODAY IS NORMAL`);
+else if(temperature > 20 )
+    alert(`TODAY'S WEATHER IS SO COOL`);
+else if(temperature > 10 )
+    alert(`OMG! TODAY'S WEATHER IS SO COOL`);
+else{
+    alert("OMG WEATHER");
+}
+
+
+/* 11. Write a program to create a calculator for +,-,*, / & %
+using if statements. Take the following input:
+a. First number
+b. Second number
+c. Operation (+, -, *, /, %)
+Compute & show the calculated result to user */
+
+
+var firstNum = +prompt("Enter First Number");
+var operator = prompt("Enter Operator Number");
+var secondNum = +prompt("Enter Second Number");
+
+
+if(operator === "+" )
+    alert(`SUM OF ${firstNum} + ${secondNum} = ${firstNum + secondNum}`)
+else if(operator === "-" )
+    alert(`SUB OF ${firstNum} + ${secondNum} = ${firstNum - secondNum}`)
+else if(operator === "*" )
+    alert(`MUL OF ${firstNum} + ${secondNum} = ${firstNum * secondNum}`)
+else if(operator === "/" )
+    alert(`DIV OF ${firstNum} + ${secondNum} = ${firstNum / secondNum}`)
+else if(operator === "%" )
+    alert(`MOD OF ${firstNum} + ${secondNum} = ${firstNum % secondNum}`)
+else{
+    alert("INVALID OPERATION");
+}
+
+
+
+
+
+
+document.write(`
+
+<table border="1">
+    <tr>
+        <th> Total Marks </th>
+        <th> Obtained Marks </th>
+        <th> percentage </th>
+        <th> Grade </th>
+        <th> Remarks </th>
+    </tr>   
+    <tr>
+        <td> ${totalMarks * 3} </td>
+        <td> ${obtainedmarks[0] + obtainedmarks[1] + obtainedmarks[2]} </td>
+        <td> ${Math.round(((obtainedmarks[0] + obtainedmarks[1] + obtainedmarks[2]) / (totalMarks * 3)) * 100)} % </td>
+        <td> ${grade}</td>
+        <td> ${remarks}</td>
+    </tr>
+</table>
+
+`);
