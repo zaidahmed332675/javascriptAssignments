@@ -101,10 +101,6 @@ for (let i = 0; i < subject.length; i++) {
     obtainedmarks[i] = +prompt(`Obtain Marks In ${subject[i]}`);
 }
 
-
-console.log((obtainedmarks[0] / totalMarks) * 100);
-
-
 document.write(`
 
 <table>
@@ -143,4 +139,3 @@ document.write(`
 </table>
 
 `);
-console.log(subject);
