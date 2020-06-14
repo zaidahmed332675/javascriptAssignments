@@ -75,6 +75,7 @@ after variable declaration is: ??”. */
 
     /* 6. The Temperature Converter: It’s hot out! Let’s make a converter based on the steps here */ 
     
+    document.write("<h1>The Temperature Converter</h1><br>");
 
     var celciusTemp = 21;
     var farenheit = Math.round((celciusTemp * (9/5)) + 32);
