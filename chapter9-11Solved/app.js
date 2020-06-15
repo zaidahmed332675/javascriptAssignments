@@ -224,7 +224,6 @@ else{
     alert("OMG WEATHER");
 }
 
-
 /* 11. Write a program to create a calculator for +,-,*, / & %
 using if statements. Take the following input:
 a. First number
