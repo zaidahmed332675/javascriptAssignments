@@ -95,4 +95,52 @@ for (let i = 2; i <= 20; i = i + 2) {
         document.write(",<br>");
     }
 }
-document.write("</p>");
+document.write("</p><br>");
+
+
+/* 7. You have an array
+A = [“cake”, “apple pie”, “cookie”, “chips”, “patties”]
+Write a program to enable “search by user input” in an
+array.
+After searching, prompt the user whether the given item is
+found in the list or not. Example */
+
+var A = ["cake", "apple pie", "cookie", "chips", "patties"];
+var userInput = prompt("WELCOME TO ZAID BAKERY, WHAT DO YOU WANT TO ORDER SIR/MA'AM").toLowerCase();
+var outPut = +A.indexOf(userInput);
+
+console.log(typeof outPut, outPut);
+
+if(outPut !== -1){
+    alert(`${userInput} IS AVAILABLE AT INDEX ${outPut} IN OUR BAKERY`);
+}else{
+    alert(`WE ARE SORRY ${userInput} IS NOT AVAILABLE IN OUR BAKERY`);
+}
+
+
+/* 8. Write a program to identify the largest number in the
+given array.
+A = [24, 53, 78, 91, 12]. */
+
+var B = [24, 53, 78, 91, 12];
+
+document.write(`ARRAY ITEMS ARE : ${B}`);
+document.write(`<br>THE LARGEST NUMBER IS : ${Math.max(24, 53, 78, 91, 12)}<br>`);
+
+/* 9. Write a program to identify the smallest number in the
+given array.
+A = [24, 53, 78, 91, 12] */
+
+var C = [24, 53, 78, 91, 12];
+
+document.write(`<br>ARRAY ITEMS ARE : ${C}`);
+document.write(`<br>THE SMALLEST NUMBER IS : ${Math.min(24, 53, 78, 91, 12)}<br>`);
+
+/* 10. Write a program to print multiples of 5 ranging 1 to 100. */
+
+document.write("<br><br>");
+for (let i = 0; i <= 100; i++) {
+    if(i % 5 == 0){
+        document.write(`${i},`);
+    }
+}
