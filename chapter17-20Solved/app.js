@@ -27,7 +27,6 @@ for (let i = 1; i <= tableLength; i++) {
 }
 
 
-
 /* 5. Write a program to print items of the following array
 using for loop:
 fruits = [“apple”, “banana”, “mango”, “orange”,
@@ -35,22 +34,21 @@ fruits = [“apple”, “banana”, “mango”, “orange”,
 
 var fruits = ["apple", "banana", "mango", "orange","strawberry"];
 
-document.write(fruits+"<br><br>");
+document.write("<br><br><h1>"+fruits+"</h1><br><br>");
 
 fruits.forEach((item,index)=>{
     document.write(`ELEMENT AT INDEX ${index} IS ${item}<br>`);
 })
 
-
 /* 6. Generate the following series in your browser. See
 example output. */
 
 // a. Counting: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15
-document.write("<h1>COUNTING FROM 1 TO 10</h1><p>");
+document.write("<h1>COUNTING FROM 1 TO 15</h1><p>");
 for (let i = 1; i <= 15; i++) {
-    document.write(`${i}<br>`);
+    document.write(`${i}`);
     if(i < 15 ){
-        document.write(",");
+        document.write(",<br>");
     }
 }
 document.write("</p>");
@@ -59,9 +57,9 @@ document.write("</p>");
 // b. Reverse counting: 10, 9, 8, 7, 6, 5, 4, 3, 2, 1
 document.write("<h1>COUNTING FROM 10 TO 1</h1><p>");
 for (let i = 10; i > 0; i--) {
-    document.write(`${i}<br>`);
+    document.write(`${i}`);
     if(i > 1 ){
-        document.write(",");
+        document.write(",<br>");
     }
 }
 document.write("</p>");
@@ -70,9 +68,9 @@ document.write("</p>");
 // c. Even: 0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20
 document.write("<h1>EVEN NUMBER COUNTING FROM 0 TO 20</h1><p>");
 for (let i = 0; i <= 20; i = i + 2) {
-    document.write(`${i}<br>`);
+    document.write(`${i}`);
     if(i < 20 ){
-        document.write(",");
+        document.write(",<br>");
     }
 }
 document.write("</p>");
@@ -80,10 +78,10 @@ document.write("</p>");
 
 // d. Odd: 1, 3, 5, 7, 9, 11, 13, 15, 17, 19
 document.write("<h1>ODD NUMBER COUNTING FROM 1 TO 19</h1><p>");
-for (let i = 1; i <= 20; i = i + 2) {
-    document.write(`${i}<br>`);
-    if(i < 20 ){
-        document.write(",");
+for (let i = 1; i < 20; i = i + 2) {
+    document.write(`${i}`);
+    if(i < 19 ){
+        document.write(",<br>");
     }
 }
 document.write("</p>");
@@ -92,9 +90,9 @@ document.write("</p>");
 // e. Series: 2k, 4k, 6k, 8k, 10k, 12k, 14k, 16k, 18k, 20k */
 document.write("<h1>SERIES FROM 2K TO 20K</h1><p>");
 for (let i = 2; i <= 20; i = i + 2) {
-    document.write(`${i}k<br>`);
+    document.write(`${i}k`);
     if(i < 20 ){
-        document.write(",");
+        document.write(",<br>");
     }
 }
 document.write("</p>");
